@@ -1,0 +1,29 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/contacts/edit/{{contacts.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="fullname" class="form-control" placeholder="fullname" value="{{contacts.fullname}}" autofocus>
+                </div>
+
+
+                <div class="form-group">
+                    <input type="text" name="email" class="form-control" placeholder="email" value="{{contacts.email}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="number" class="form-control" placeholder="number" value="{{contacts.number}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="t_contact" class="form-control" placeholder="t_contact" value="{{contacts.t_contact}}" autofocus>
+                </div>
+               
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
